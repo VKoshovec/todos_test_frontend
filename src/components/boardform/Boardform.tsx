@@ -39,7 +39,7 @@ const Boardform = () => {
 
            <Field id="firstName" name="firstName" placeholder="Board Name" className={ css.formInput }/>
 
-           <button type="submit" className={ css.formButton }>Submit</button>
+           <button type="button" className={ css.formButton }>Find</button>
 
          </Form>
 

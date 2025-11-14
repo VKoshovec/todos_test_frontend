@@ -2,24 +2,28 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 4px -2px 8px 4px rgb(255, 241, 241);
+  border-radius: 4px;
 }
 
 .boardForm {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   width: 90%;
-  border: 1px solid black;
 }
 
 .formInput {
   display: block;
-  width: 400px;
+  width: 500px;
   height: 30px;
+  font-size: 26px;
 }
 
 .formButton {
-  margin-left: 20px;
   width: 200px;
   height: 35px;
+  font-size: 24px;
+  font-weight: 600;
 }/*# sourceMappingURL=boardform.module.css.map */

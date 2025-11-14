@@ -1,0 +1,25 @@
+.boardFrame{
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 4px -2px 8px 4px rgb(255, 241, 241);
+    border-radius: 4px;
+}
+
+.boardTable {    
+    width: 100%;
+    height: 100%;
+}
+
+.boardTableLines{
+    border-right: 8px dotted rgb(255, 241, 241);
+}
+
+.boardTableLinesHead:not(:last-child) {
+    border-right: 8px dotted rgb(255, 241, 241);
+    border-bottom: 8px dotted rgb(255, 241, 241);
+}
+
+.boardTableLinesHead:last-child{
+    border-bottom: 8px dotted rgb(255, 241, 241);
+}
