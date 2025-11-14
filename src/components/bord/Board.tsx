@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './board.module.scss';
 import Card from '../card/Card';
+import Boardaddbtn from '../boardaddbtn/Boardaddbtn';
 
 const Board = () => {
    
@@ -17,11 +18,17 @@ const Board = () => {
         </thead>
         <tbody>
           <tr>
-            <td className={ css.boardTableLines }>1
-               <Card/>
+            <td className={ css.boardTableLines }>
+              <Card/>
+              <Card/>
+              <Boardaddbtn/>
             </td>
-            <td className={ css.boardTableLines }>2</td>
-            <td>3</td>
+            <td className={ css.boardTableLines }>
+              <Card/>
+            </td>
+            <td className={ css.boardTableLines }>
+              <Card/>
+            </td>
           </tr>
         </tbody>
        </table>
