@@ -9,14 +9,14 @@ import css from './cardform.module.scss';
 
  interface MyFormValues {
    cardName: string;
-   cardDesk: string;
+   cardDesc: string;
    cardStatus: string;
  }
 
 const Cardform = () => {
 
    const visible:boolean = false;
-   const initialValues: MyFormValues = { cardName: '', cardDesk: '', cardStatus: '' };
+   const initialValues: MyFormValues = { cardName: '', cardDesc: '', cardStatus: '' };
 
    return (
      visible?
@@ -42,8 +42,8 @@ const Cardform = () => {
            <label htmlFor="cardName" className={ css.formLabel } >Card name</label>
            <Field id="cardName" name="cardName" placeholder="Card name" className={ css.formInput }/>
 
-           <label htmlFor="cardDesk" className={ css.formLabel }>Deskription</label>
-           <Field id="cardDesk" name="cardDesk" placeholder="Deskription" type="text" className={ css.formInputDFesk }/>
+           <label htmlFor="cardDesc" className={ css.formLabel }>Description</label>
+           <Field id="cardDesc" name="cardDesc" placeholder="Description" type="text" className={ css.formInputDFesk }/>
 
            <label htmlFor="cardStatus" className={ css.formLabel }>Status</label>
            <Field component="select" id="cardStatus" name="cardStatus" className={ css.formInput }>
