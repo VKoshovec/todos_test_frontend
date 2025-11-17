@@ -5,12 +5,15 @@ import { ReactComponent as Delsvg } from '../../icons/folder-del-svgrepo-com.svg
 
 const Card = () => {
    
+  const currentBoardId:boolean = false;
+  
    return (
+
 
      <div className={ css.cardFrame }>
 
         <h2 className={ css.cardTitle }>Card123</h2>
-        <p>knciniowncinw</p>
+        { !currentBoardId&&<p>knciniowncinw</p>}
         <div className={ css.cardControls }>
           <button type='button'className={ css.cardBtn }><Editsvg className={ css.cardEdit }/></button>
           <button type='button'className={ css.cardBtn }><Delsvg className={ css.cardEdit }/></button>
