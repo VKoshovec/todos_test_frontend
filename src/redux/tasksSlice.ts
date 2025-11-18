@@ -31,6 +31,6 @@ export const taskssSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { fetchingInProgress, fetchingSuccess, fetchingError } = boardsSlice.actions;
+export const { fetchingInProgress, fetchingSuccess, fetchingError } = taskssSlice.actions;
 
 export default taskssSlice.reducer;

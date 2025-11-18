@@ -19,15 +19,11 @@ const Board = () => {
         <tbody>
           <tr>
             <td className={ css.boardTableLines }>
-              <Card/>
-              <Card/>
               <Boardaddbtn/>
             </td>
             <td className={ css.boardTableLines }>
-              <Card/>
             </td>
             <td className={ css.boardTableLines }>
-              <Card/>
             </td>
           </tr>
         </tbody>

@@ -2,10 +2,10 @@ import axios from "axios";
 import {
   fetchingInProgress,
   fetchingSuccess,
-  fetchingError,
+  // fetchingError,
 } from "./boardsSlice";
 
-axios.defaults.baseURL = "<https://todostestbackendr.vercel.app/api>";
+axios.defaults.baseURL = "https://todostestbackendr.vercel.app/api";
 
 export const fetchTasks = () => async (dispatch: (arg0: { payload: any; type: "boards/fetchingInProgress" | "boards/fetchingSuccess" | "boards/fetchingError"; }) => void) => {
   try {
@@ -16,8 +16,9 @@ export const fetchTasks = () => async (dispatch: (arg0: { payload: any; type: "b
     // Обробка даних
     dispatch(fetchingSuccess(response.data));
   } 
-//   catch (e) {
+  catch (e) {
+    console.log(e);
 //     // Обробка помилки
 //     dispatch(fetchingError(e.message));
-//   }
+   }
 };

@@ -3,9 +3,7 @@ import css from './loader.module.scss';
 import { Oval } from 'react-loader-spinner';
 
 
-const Loader = () => {
-
-   const visible:boolean = false;
+const Loader = ({visible}:Props) => {
 
    return (
     visible?<div className={ css.loaderFrame}>
@@ -24,4 +22,7 @@ const Loader = () => {
 
  };
 
+ type Props = {
+   visible:boolean,
+};
 export default Loader;
